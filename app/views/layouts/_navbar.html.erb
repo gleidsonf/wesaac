@@ -1,0 +1,54 @@
+<!--************************************
+    Header Start
+*************************************-->
+<header id="tg-header" class="tg-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <strong class="tg-logo">
+          <%= link_to root_path do %>
+          <%= image_tag "logo.png", alt: "Conference logo" %>
+          <% end %>
+        </strong>
+        <div class="tg-navigationarea">
+          <!-- <a id="tg-btnopenclose" class="tg-btnopenclose" href="javascript:void(0);"><i class="icon-menu"></i></a> -->
+          <nav id="tg-nav" class="tg-nav">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#tg-navigation" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div id="tg-navigation" class="collapse navbar-collapse tg-navigation">
+              <ul>
+                <li class="tg-active menu-item-has-children">
+                  <a href="#body">Home</a>
+                </li>
+                <li><a href="#tg-main">About</a></li>
+                <li><a href="#papers">Papers</a></li>
+                <li><a href="#important-dates">Important Dates</a></li>
+                <li>
+                  <a href="#committees">Committees</a>
+                  <ul class="sub-menu">
+                    <li><%= link_to "See all", committees_path, class: "external" %>
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="#tg-schedule">Schedule</a></li>
+                <li><a href="#tg-speakers">Speakers</a></li>
+                <!-- <li><a href="#tg-price">Price</a></li> -->
+                <li><a href="#tg-sponsers">Sponsors</a></li>
+                <li><a href="#tg-venue">Venue</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!--************************************
+    Header End
+*************************************-->
