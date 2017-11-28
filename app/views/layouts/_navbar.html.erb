@@ -26,7 +26,13 @@
                 <li class="tg-active menu-item-has-children">
                   <a href="#body">Home</a>
                 </li>
-                <li><a href="#tg-main">About</a></li>
+                <li>
+                  <a href="#tg-main">About</a>
+                  <ul class="sub-menu">
+                      <li><%= link_to "Info", info_path, class: "external" %>
+                      </li>
+                  </ul>
+                </li>
                 <li><a href="#papers">Papers</a></li>
                 <li><a href="#important-dates">Important Dates</a></li>
                 <li>
