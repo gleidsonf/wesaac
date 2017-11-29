@@ -162,9 +162,9 @@ jQuery(document).on('ready', function() {
 	var _tg_locationmap = jQuery("#tg-locationmap");
 	_tg_locationmap.gmap3({
 		marker: {
-			address: "Avenida Washington Soares, 1321 - Reitoria - Edson Queiroz, Fortaleza - CE, 60811-905",
+			address: "1600 Elizabeth St, Melbourne, Victoria, Australia",
 			options: {
-				title: "Wesaac 2018",
+				title: "Event Orgnizer",
 				icon: "images/map-marker.png",
 			}
 		},
