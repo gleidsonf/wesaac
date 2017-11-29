@@ -9,6 +9,18 @@
 
   <body id="body" class="tg-home tg-hometwo">
     <!--[if lt IE 8]> <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p> <![endif]-->
+    <!--************************************
+  			Preloader Start
+  	*************************************-->
+  	<div id="status" style="display: none;">
+  		<div id="preloader" class="preloader" style="display: none;">
+  			<img src="images/Loader.gif" alt="Preloader">
+  		</div>
+  	</div>
+  	<!--************************************
+  			Preloader End
+  	*************************************-->
+
     <div id="tg-wrapper" class="tg-wrapper tg-haslayout">
       <%= render "layouts/navbar" %>
       <%= yield %>
