@@ -27,21 +27,3 @@
 //= require turbolinks
 //= require_tree .
 //
-//
-// <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-//
-//
-// <script src="js/vendor/jquery-library.js"></script>
-// <script src="js/vendor/bootstrap.min.js"></script>
-// <script src="https://maps.google.com/maps/api/js?key=AIzaSyCR-KEWAVCn52mSdeVeTqZjtqbmVJyfSus&amp;language=en"></script>
-// <script src="js/jquery.singlePageNav.min.js"></script>
-// <script src="js/photoswipe-ui-default.js"></script>
-// <script src="js/customScrollbar.min.js"></script>
-// <script src="js/owl.carousel.min.js"></script>
-// <script src="js/photoswipe.min.js"></script>
-// <script src="js/prettyPhoto.js"></script>
-// <script src="js/tilt.jquery.js"></script>
-// <script src="js/countdown.js"></script>
-// <script src="js/parallax.js"></script>
-// <script src="js/gmap3.js"></script>
-// <script src="js/main.js"></script>
