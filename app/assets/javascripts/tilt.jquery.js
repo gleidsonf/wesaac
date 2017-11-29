@@ -118,7 +118,7 @@
                 return;
             } else {
                 $(this).css('transform', `perspective(${this.settings.perspective}px) rotateX(${this.settings.axis === 'x' ? 0 : this.transforms.tiltY}deg) rotateY(${this.settings.axis === 'y' ? 0 : this.transforms.tiltX}deg) scale3d(${this.settings.scale},${this.settings.scale},${this.settings.scale})`);
-              )
+
                 // Rotate glare if enabled
                 if (this.settings.glare){
                     this.glareElement.css('transform', `rotate(${this.transforms.angle}deg) translate(-50%, -50%)`);
