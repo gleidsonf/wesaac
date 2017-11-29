@@ -18,6 +18,7 @@
 //= require photoswipe-ui-default
 //= require customScrollbar.min
 //= require owl.carousel.min
+//= require photoswipe.min
 //= require prettyPhoto
 //= require tilt.jquery
 //= require countdown
