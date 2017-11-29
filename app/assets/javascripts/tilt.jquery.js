@@ -24,8 +24,8 @@
          */
         const setTransition = function() {
             if (this.timeout !== undefined) clearTimeout(this.timeout);
-            $(this).css({'transition': `${this.settings.speed}ms ${this.settings.easing}`});
-            if(this.settings.glare) this.glareElement.css({'transition': `opacity ${this.settings.speed}ms ${this.settings.easing}`});
+            $(this).css({'transition': '${this.settings.speed}ms ${this.settings.easing}'});
+            if(this.settings.glare) this.glareElement.css({'transition': 'opacity ${this.settings.speed}ms ${this.settings.easing}'});
             this.timeout = setTimeout(() => {
                 $(this).css({'transition': ''});
                 if(this.settings.glare) this.glareElement.css({'transition': ''});
@@ -107,22 +107,22 @@
 
             if (this.reset) {
                 this.reset = false;
-                $(this).css('transform', `perspective(${this.settings.perspective}px) rotateX(0deg) rotateY(0deg)`);
+                $(this).css('transform', 'perspective(${this.settings.perspective}px) rotateX(0deg) rotateY(0deg)');
 
                 // Rotate glare if enabled
                 if (this.settings.glare){
-                    this.glareElement.css('transform', `rotate(180deg) translate(-50%, -50%)`);
-                    this.glareElement.css('opacity', `0`);
+                    this.glareElement.css('transform', 'rotate(180deg) translate(-50%, -50%)');
+                    this.glareElement.css('opacity', '0');
                 }
 
                 return;
             } else {
-                $(this).css('transform', `perspective(${this.settings.perspective}px) rotateX(${this.settings.axis === 'x' ? 0 : this.transforms.tiltY}deg) rotateY(${this.settings.axis === 'y' ? 0 : this.transforms.tiltX}deg) scale3d(${this.settings.scale},${this.settings.scale},${this.settings.scale})`);
+                $(this).css('transform', 'perspective(${this.settings.perspective}px) rotateX(${this.settings.axis === 'x' ? 0 : this.transforms.tiltY}deg) rotateY(${this.settings.axis === 'y' ? 0 : this.transforms.tiltX}deg) scale3d(${this.settings.scale},${this.settings.scale},${this.settings.scale})');
 
                 // Rotate glare if enabled
                 if (this.settings.glare){
-                    this.glareElement.css('transform', `rotate(${this.transforms.angle}deg) translate(-50%, -50%)`);
-                    this.glareElement.css('opacity', `${this.transforms.percentageY * this.settings.maxGlare / 100}`);
+                    this.glareElement.css('transform', 'rotate(${this.transforms.angle}deg) translate(-50%, -50%)');
+                    this.glareElement.css('opacity', '${this.transforms.percentageY * this.settings.maxGlare / 100}');
                 }
             }
 
@@ -170,9 +170,9 @@
                 'top': '50%',
                 'left': '50%',
                 'pointer-events': 'none',
-                'background-image': `linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)`,
-                'width': `${$(this).outerWidth()*2}`,
-                'height': `${$(this).outerWidth()*2}`,
+                'background-image': 'linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)',
+                'width': '${$(this).outerWidth()*2}',
+                'height': '${$(this).outerWidth()*2}',
                 'transform': 'rotate(180deg) translate(-50%, -50%)',
                 'transform-origin': '0% 0%',
                 'opacity': '0',
