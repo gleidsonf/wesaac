@@ -1,0 +1,19 @@
+<li class="tg-active menu-item-has-children">
+  <%= link_to "Home", root_path(anchor: "body"), class: "external" %>
+</li>
+<li>
+  <%= link_to "About", root_path(anchor: "tg-main"), class: "external" %>
+</li>
+<li><%= link_to "Informations", info_path, class: "external" %></li>
+<li><%= link_to "Important Dates", root_path(anchor: "important-dates"), class: "external" %> </li>
+<li>
+  <a href="/#committees" class="external">Committees</a>
+  <ul class="sub-menu">
+    <li><%= link_to "See all", committees_path, class: "external" %>
+    </li>
+  </ul>
+</li>
+<li class="hidden"><%= link_to "Schedule", root_path(anchor: "tg-schedule"), class: "external" %></li>
+<li class="hidden"><%= link_to "Speakers", root_path(anchor: "tg-speakers"), class: "external" %>></li>
+<li class="hidden"><%= link_to "Sponsors", root_path(anchor: "tg-sponsers"), class: "external" %></li>
+<li><%= link_to "Venue", root_path(anchor: "tg-venue"), class: "external" %></li>

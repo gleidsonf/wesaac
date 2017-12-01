@@ -405,3 +405,9 @@ jQuery(document).on('ready', function() {
 	-------------------------------------- */
 	jQuery('[data-toggle="tooltip"]').tooltip()
 });
+
+// Wait for window load
+$(window).load(function() {
+    // Animate loader off screen
+    $(".page-loader").fadeOut("slow");
+});

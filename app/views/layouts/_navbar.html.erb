@@ -23,26 +23,11 @@
             </div>
             <div id="tg-navigation" class="collapse navbar-collapse tg-navigation">
               <ul>
-                <li class="tg-active menu-item-has-children">
-                  <a href="#body">Home</a>
-                </li>
-                <li>
-                  <a href="#tg-main">About</a>
-                </li>
-                <li><a href="#papers">Call for papers</a></li>
-                <li><a href="#important-dates">Important Dates</a></li>
-                <li>
-                  <a href="#committees">Committees</a>
-                  <ul class="sub-menu">
-                    <li><%= link_to "See all", committees_path, class: "external" %>
-                    </li>
-                  </ul>
-                </li>
-                <li class="hidden"><a href="#tg-schedule">Schedule</a></li>
-                <li class="hidden"><a href="#tg-speakers">Speakers</a></li>
-                <!-- <li><a href="#tg-price">Price</a></li> -->
-                <li><a href="#tg-sponsers">Sponsors</a></li>
-                <li><a href="#tg-venue">Venue</a></li>
+                <% if request.fullpath == root_path %>
+                  <%= render "layouts/navbar_root" %>
+                <% else %>
+                  <%= render "layouts/navbar_page" %>
+                <% end %>
               </ul>
             </div>
           </nav>

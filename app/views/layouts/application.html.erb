@@ -4,7 +4,7 @@
     <title>Wesaac</title>
     <%= csrf_meta_tags %>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body id="body" class="tg-home tg-hometwo">
@@ -12,12 +12,13 @@
     <!--************************************
   			Preloader Start
   	*************************************-->
-  	<div id="status" style="display: none;">
-  		<div id="preloader" class="preloader" style="display: none;">
-  			<img src="images/Loader.gif" alt="Preloader">
-  		</div>
-  	</div>
-  	<!--************************************
+    <div class="page-loader"></div>
+    <!-- <div id="status">
+      <div id="preloader" class="preloader">
+        <img src="images/Loader.gif" alt="Preloader" />
+      </div>
+    </div> -->
+<!--************************************
   			Preloader End
   	*************************************-->
 
@@ -27,7 +28,8 @@
       <%= render "layouts/footer" %>
     </div>
 
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <script src="https://maps.google.com/maps/api/js?key=AIzaSyCR-KEWAVCn52mSdeVeTqZjtqbmVJyfSus&amp;language=en"></script>
+    <!-- <script src=""></script> -->
   </body>
-</html>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'https://maps.google.com/maps/api/js?key=AIzaSyCR-KEWAVCn52mSdeVeTqZjtqbmVJyfSus&amp;language=en', 'data-turbolinks-track': 'reload', 'data-turbolinks-eval': 'false' %>
+ </html>
