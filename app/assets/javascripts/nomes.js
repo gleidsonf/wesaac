@@ -67,7 +67,7 @@ program_committe = [{
   "pais": "Espanha"
 }, {
   "nome": "Barbosa, Raquel",
-  "universidade": "FURG",
+  "universidade": "IFRS",
   "pais": "Brasil"
 }, {
   "nome": "Bazzan, Ana L. C.",
@@ -88,10 +88,6 @@ program_committe = [{
 }, {
   "nome": "Campos, André",
   "universidade": "UFRN",
-  "pais": "Brasil"
-}, {
-  "nome": "Carine Webber",
-  "universidade": "UCS,",
   "pais": "Brasil"
 }, {
   "nome": "Casare, Sara",
@@ -189,10 +185,6 @@ program_committe = [{
   "nome": "Nardin, Luis Gustavo",
   "universidade": "University",
   "pais": "of Idaho USA"
-}, {
-  "nome": "Nunes, Ingrid",
-  "universidade": "UFRGS",
-  "pais": "Brasil"
 }, {
   "nome": "Okuyama, Fabio",
   "universidade": "IFRS",
