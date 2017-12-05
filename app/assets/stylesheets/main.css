@@ -4249,9 +4249,42 @@ body.tg-fixedme .tg-headervtwo:before{display:none;}
 }
 
 .current {
-	background-color: #f2eded;
+	background-color: #fcfcfc	;
 }
 
 #topics .tg-description {
 	text-align: left;
+}
+body.tg-fixedme .tg-header .tg-logo {
+	/*width: 250px;*/
+}
+
+.tg-locationregister .tg-locationcontact {
+	height: 638px;
+}
+
+.contact-info h3 {
+	padding: 10px;
+}
+.contact-info p {
+	margin: 0 0 10px;
+}
+.contact-info {
+	margin-bottom: 20px;
+	text-shadow: 1px 1px #d6d6;
+}
+
+.tg-registerholder:before {
+	background:
+		-moz-linear-gradient(-45deg,
+		rgba(14, 204, 246, 0.95) 0%,
+		rgba(194, 217, 8, 0.95) 80%);
+	background:
+		-webkit-linear-gradient(-45deg,
+		rgba(14, 204, 246, 0.95) 0%,
+		rgba(194, 217, 8, 0.95) 80%);
+	background:
+		linear-gradient(135deg,
+		rgba(14, 204, 246, 0.95) 0%,
+		rgba(194, 217, 8, 0.95) 80%);
 }
