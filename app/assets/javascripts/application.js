@@ -24,7 +24,8 @@
 //= require countdown
 //= require parallax
 //= require gmap3
-//= require moment
+//= require moment/pt-br
+// antes estava somente moment
 //= require bootstrap-datetimepicker
 //= require main
 //= require_tree .
