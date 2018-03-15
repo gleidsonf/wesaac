@@ -33,10 +33,13 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 # gem 'wdm'
 
-gem 'devise'
 gem 'momentjs-rails', '>= 2.9.0'
 # https://eonasdan.github.io/bootstrap-datetimepicker/Installing/#rails
 gem 'bootstrap3-datetimepicker-rails', '~> 4.17.47'
+
+gem 'activeadmin'
+gem 'devise', '~> 4.4.0'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

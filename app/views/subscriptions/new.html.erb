@@ -1,0 +1,154 @@
+<!--************************************
+    Packages Start
+*************************************-->
+<section id="tg-price" class="tg-sectionspace tg-haslayout">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-offset-0 col-xs-12 col-sm-offset-0 col-sm-12 col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8">
+        <div class="tg-sectionhead">
+          <div class="tg-sectionheading">
+            <h2>Taxa de inscrição</h2>
+          </div>
+          <div class="tg-description">
+            <p>Confira a seguir as categorias de inscrição.</p>
+          </div>
+        </div>
+      </div>
+      <div class="tg-packages">
+        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+          <div class="tg-package tg-basicplan">
+            <div class="tg-packagehead">
+              <figure class="tg-themepostimg">
+                <img src="images/packages/img-01.jpg" alt="image description">
+                <figcaption class="tg-packagedetail">
+                  <h3>Graduação</h3>
+                  <h4>
+                    <sub>R$</sub>
+                    <span>80</span>
+                    <em>Alunos de graduação</em>
+                  </h4>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+          <div class="tg-package tg-businessplan">
+            <div class="tg-packagehead">
+              <figure class="tg-themepostimg">
+                <img src="images/packages/img-03.jpg" alt="image description">
+                <figcaption class="tg-packagedetail">
+                  <h3>Pós Graduação</h3>
+                  <h4>
+                    <sub>R$</sub>
+                    <span>120</span>
+                    <em>Alunos de pós graduação</em>
+                  </h4>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+          <div class="tg-package tg-companyplan">
+            <div class="tg-packagehead">
+              <figure class="tg-themepostimg">
+                <img src="images/packages/img-04.jpg" alt="image description">
+                <figcaption class="tg-packagedetail">
+                  <h3>Profissional</h3>
+                  <h4>
+                    <sub>R$</sub>
+                    <span>160</span>
+                    <em>Para profissionais</em>
+                  </h4>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="tg-description text-center">
+        <div class="col-md-12">
+          <p>O pagamento da inscrição deve ser feito via depósito/transferência para a conta especificada a seguir: </p>
+          <p><strong>Banco Bradesco</strong><br>
+          Agencia: 0649       Dig 1 <br>
+          Conta: 1009323      Dig 6 <br>
+          Nome: MARIELA INES CORTES </p>
+        </div>
+        <div class="col-md-12">
+
+          <p><strong>Observações</strong></p>
+          <ol>
+            <li>Todos os inscritos devem enviar o comprovante da transferência para o email mariela@larces.uece.br</li>
+            <li>Os alunos precisam enviar documentação comprobatória para o email mariela@larces.uece.br</li>
+          </ol>
+
+        </div>
+      </div>
+    </div>
+    <div class="row ">
+      <%= form_for @subscription, url: { action: "create" } do |f| %>
+      <% if @subscription.errors.any?%>
+        <% @subscription.errors.full_messages.each do |mensagem|%>
+          <li><%= mensagem %></li>
+        <%end%>
+      <%end%>
+      <div class="form-group col-md-4">
+        <label for="nome">Nome</label>
+        <%= f.text_field :nome, class: 'form-control', placeholder: 'Nome' %>
+      </div>
+      <div class="form-group col-md-4">
+        <label for="cpf">CPF</label>
+        <%= f.text_field :cpf, class: 'form-control', placeholder: '000.000.000-00' %>
+      </div>
+      <div class="form-group col-md-4">
+        <label for="email">E-mail</label>
+        <%= f.email_field :email, class: 'form-control', placeholder: 'E-mail' %>
+      </div>
+      <div class="form-group col-md-4">
+        <label for="celular">Celular</label>
+        <%= f.text_field :celular, class: 'form-control', placeholder: 'Celular' %>
+      </div>
+      <div class="form-group col-md-4">
+        <label for="endereco">Endereço</label>
+        <%= f.text_field :endereco, class: 'form-control', placeholder: 'Endereço' %>
+      </div>
+      <div class="form-group col-md-4">
+        <label for="cidade">Cidade</label>
+        <%= f.text_field :cidade, class: 'form-control', placeholder: 'Endereço' %>
+      </div>
+      <div class="form-group col-md-4">
+        <label for="filiacao">Filiação</label>
+        <%= f.text_field :filiacao, class: 'form-control', placeholder: 'instituição/empresa' %>
+      </div>
+      <div class="form-group col-md-4">
+        <label for="profissao">Profissão</label>
+        <%= f.select(:profissao, [
+            ['Profissionais e pesquisadores', 'Profissionais e pesquisadores'],
+            ['Estudantes de Pós Graduação', 'Estudantes de Pós Graduação'],
+            ['Estudantes de Graduação', 'Estudantes de Graduação']
+            ], { prompt: 'Selecione' }, { class: "form-control" }) %>
+      </div>
+      <div class="form-group col-md-4">
+        <label for="portador">É portador de necessidades especiais?</label>
+        <%= f.select(:portador, [ ['Não', 'Não'], ['Sim', 'Sim'] ], { prompt: "Selecione" }, { class: "form-control" }) %>
+      </div>
+      <div class="form-group col-md-4">
+        <label for="necessidade">Qual?</label>
+        <%= f.text_field :necessidade, class: 'form-control', placeholder: 'Necessidade' %>
+      </div>
+      <div class="form-group col-md-4">
+        <label for="">Enviar</label>
+        <%= f.submit "Enviar", class: "btn btn-default form-control" %>
+      </div>
+      <% end %>
+    </div>
+
+  </div>
+</section>
+<!--************************************
+    Packages End
+*************************************-->
