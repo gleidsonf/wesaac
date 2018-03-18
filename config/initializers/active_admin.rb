@@ -9,7 +9,7 @@ ActiveAdmin.setup do |config|
   # Set the link url for the title. For example, to take
   # users to your main site. Defaults to no link.
   #
-  # config.site_title_link = "/"
+  config.site_title_link = "/"
 
   # Set an optional image to be displayed for the header
   # instead of a string (overrides :site_title)
@@ -201,6 +201,12 @@ ActiveAdmin.setup do |config|
   # To load a javascript file:
   #   config.register_javascript 'my_javascript.js'
 
+
+
+  current_javascripts = config.javascripts.clone
+  config.clear_javascripts!
+  config.register_javascript 'application.js'
+
   # == CSV options
   #
   # Set the CSV builder separator
@@ -282,7 +288,7 @@ ActiveAdmin.setup do |config|
   # By default, the footer shows the current Active Admin version. You can
   # override the content of the footer here.
   #
-  # config.footer = 'my custom footer text'
+  # config.footer = 'Acens 2018'
 
   # == Sorting
   #
