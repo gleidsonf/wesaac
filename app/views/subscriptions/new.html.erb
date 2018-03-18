@@ -89,7 +89,7 @@
         </div>
       </div>
     </div>
-    <div class="row ">
+    <div class="row">
       <%= form_for @subscription, url: { action: "create" } do |f| %>
       <% if @subscription.errors.any?%>
         <% @subscription.errors.full_messages.each do |mensagem|%>
@@ -101,8 +101,8 @@
         <%= f.text_field :nome, class: 'form-control', placeholder: 'Nome' %>
       </div>
       <div class="form-group col-md-4">
-        <label for="cpf">CPF</label>
-        <%= f.text_field :cpf, class: 'form-control', placeholder: '000.000.000-00' %>
+        <label for="cpf">CPF (somente números)</label>
+        <%= f.text_field :cpf, class: 'form-control', placeholder: '00000000000' %>
       </div>
       <div class="form-group col-md-4">
         <label for="email">E-mail</label>

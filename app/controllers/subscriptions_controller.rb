@@ -5,8 +5,8 @@ class SubscriptionsController < ApplicationController
   end
 
   def create
-    @teste = Subscription.new subscription_params
-    if @teste.save
+    @subscription = Subscription.new subscription_params
+    if @subscription.save
       redirect_to root_path, notice: "Inscrição realizada com sucesso!"
     else
       render :new
